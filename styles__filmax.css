@@ -85,6 +85,7 @@ a {
 .search:hover {
   cursor: pointer;
 }
+
 .social-menu {
   gap: 26px;
 }
@@ -311,7 +312,8 @@ a {
   height: 10px;
   border-radius: 50%;
   background-color: #ccc;
-  margin-right: 10px; /* Adjust as needed */
+  margin-right: 10px;
+  /* Adjust as needed */
   transition: background-color 0.3s ease;
 }
 
