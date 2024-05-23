@@ -4,6 +4,10 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+img {
+  image-rendering: optimizeQuality;
+}
+
 ul {
   list-style-type: none;
 }
