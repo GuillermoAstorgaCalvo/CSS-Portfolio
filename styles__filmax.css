@@ -36,6 +36,74 @@ a {
   display: flex;
 }
 
+.top-header {
+  padding-top: 10px;
+  margin-bottom: -60px;
+  margin-right: 265px;
+}
+
+.home-btn {
+  color: #9b9b9b;
+  background: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #616161;
+  position: relative;
+  margin: 1em;
+  display: inline-block;
+  padding: 0.5em 1em;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  font-family: "Comfortaa";
+  font-weight: bold;
+}
+
+.home-btn::before,
+.home-btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-color: #454545;
+  box-sizing: border-box;
+  border-style: solid;
+  width: 1em;
+  height: 1em;
+  transition: all 0.3s ease-in-out;
+}
+
+.home-btn::before {
+  top: -6px;
+  left: -6px;
+  border-width: 2px 0 0 2px;
+  z-index: 5;
+}
+
+.home-btn::after {
+  bottom: -6px;
+  right: -6px;
+  border-width: 0 2px 2px 0;
+}
+
+.home-btn:hover::before,
+.home-btn:hover::after {
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  border-color: #fff;
+}
+
+.home-btn:hover {
+  color: #353535;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.panel {
+  max-width: 1200px;
+  text-align: left;
+  position: relative;
+  margin: auto;
+}
+
 .header,
 .header__gladiator {
   justify-content: space-between;
